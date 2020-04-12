@@ -17,9 +17,9 @@ if (isset($_POST['unit-submit'])) {
  * To calculate electricity bill as per unit cost
  */
 function calculate_bill($units) {
-    $unit_cost_first = 9.00;
-    $unit_cost_second = 12.00;
-    $unit_cost_third = 15.00;
+    $unit_cost_first = 9.00;    //For first 50 units, it will charge Rs 9 per unit
+    $unit_cost_second = 12.00;  //For next 50 units, it will charge Rs 12
+    $unit_cost_third = 15.00;   //And above it, charges will be 15
     
 
     if($units <= 50) {
